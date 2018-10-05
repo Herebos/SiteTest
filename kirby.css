@@ -1,0 +1,150 @@
+body {
+    position: relative;
+    background-image: url(images/fondKirby.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding: auto;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: #333;
+    width: auto;
+    text-align: left;
+    color: white;
+    padding: 10px 16px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1,
+h2 {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+h3,
+h4 {
+    font-style: italic;
+}
+
+.sakurai,
+.adventure,
+.ssb {
+    border-radius: 70%;
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.dreamland,
+.popstar,
+.kirbyssb,
+.dadidou,
+.kGifRide,
+.kGifPluie,
+.kGifEat {
+    border-radius: 70%;
+    float: right;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 15px 50px 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.colonne {
+    background-color: lightpink;
+    padding: 0 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+ol {
+    list-style-type: circle;
+}
+
+
+/*Menu déroulant*/
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.btnDeroulant {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .btnDeroulant {
+    background-color: skyblue;
+}
+
+li a.active {
+    background-color: cadetblue;
+    color: white;
+}
+
+li.deroulant {
+    display: inline-block;
+}
+
+.menu-deroulant {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-deroulant a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-deroulant a:hover {
+    background-color: skyblue;
+}
+
+.deroulant:hover .menu-deroulant {
+    display: block;
+}
+
+.fleche {
+
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+}
